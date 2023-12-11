@@ -1,3 +1,5 @@
+# Tested with 3.19, if alpine stops supporting jdk8, use 3.19 version.
+# docker pull alpine:3.19.0 
 FROM alpine
 
 ENV _JAVA_OPTIONS '-Dawt.useSystemAAFontSettings=gasp'
