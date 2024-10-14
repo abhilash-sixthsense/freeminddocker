@@ -1,1 +1,4 @@
 shared_folder
+.freemind/freemind.socket
+.freemind/log.*
+.freemind/FM_*
