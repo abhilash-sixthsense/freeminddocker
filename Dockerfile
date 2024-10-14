@@ -11,10 +11,10 @@ RUN apk update && apk upgrade && apk add \
      ttf-dejavu \
      fontconfig  
 
-COPY ./freemind-bin-max-1.0.1.zip fm.zip
 RUN mkdir -p /softwares/freemind 
-RUN unzip fm.zip -d ./softwares/freemind  && rm fm.zip
 WORKDIR /softwares/freemind
+COPY ./freemind-bin-max-1.0.1.zip fm.zip
+RUN unzip fm.zip  && rm fm.zip
 RUN echo `ls`
 RUN echo `pwd`
 RUN chmod +x freemind.sh
