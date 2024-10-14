@@ -1,3 +1,5 @@
+#! /bin/bash
+
 export X11_IP=$(ifconfig en0 | grep '[i]net' | awk '$1 == "inet" {print $2}')
 xhost +$X11_IP
 
